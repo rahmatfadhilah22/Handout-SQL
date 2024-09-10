@@ -1,0 +1,4 @@
+-- 1. Tampilkan Nama produk yang dijual dalam bentuk botol
+-- 2. Tampilkan Nama depan dan nama belakang employee yang berumur lebih dari 50 tahun, jika tahun sekarang adalah 2010
+-- 3. Tampilkan ContactName supplier yang tidak memiliki region
+-- 4. Tampilkan nama produk, dan total harga produk tersebut dalam bentuk USD

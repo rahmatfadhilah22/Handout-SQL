@@ -1,0 +1,30 @@
+/*
+	Sebelum masuk ke TOPIK DDL adabaiknya memahami bagaimana membuat database dan tabel.
+	Untuk membuat Database dan Tabel dapat dengan menggunakan klausa CREATE DATABASE/TABLE NAMA_DATABASE/TABEL.
+*/
+
+-- Contoh membuat Database
+CREATE DATABASE Contoh1; -- Query ini akan membuat Database baru dengan nama Contoh 1, dan untuk menggunakannya
+						 -- dapat menggunakan klausa USE
+USE Contoh1;
+
+-- Contoh membuat tabel
+
+CREATE TABLE PROGRAM_STUDI (
+	 PROGRAM_STUDI_ID INT IDENTITY(1,1) NOT NULL
+	,NAMA VARCHAR(50) NOT NULL
+	CONSTRAINT PK_PROGRAM_STUDI PRIMARY KEY (PROGRAM_STUDI_ID)
+);
+
+CREATE TABLE MAHASISWA (
+	 MAHASISWA_ID INT IDENTITY(1,1)
+	,PROGRAM_STUDI_ID INT NOT NULL
+	,NIM VARCHAR(12) NOT NULL
+	,NAMA VARCHAR(50) NOT NULL
+	,JENIS_KELAMIN VARCHAR(1) NOT NULL
+	,ALAMAT NVARCHAR(100) NOT NULL
+	,DOMISILI NVARCHAR(100)
+	,CONSTRAINT PK_MAHASISWA PRIMARY KEY (MAHASISWA_ID)
+	,CONSTRAINT FK_MAHASISWA_PROGRAM_STUDI FOREIGN KEY (PROGRAM_STUDI_ID) REFERENCES PROGRAM_STUDI (PROGRAM_STUDI_ID)
+);
+
