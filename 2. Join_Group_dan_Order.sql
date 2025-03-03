@@ -6,15 +6,15 @@
 /*
 	Klausa JOIN digunakan untuk menghubungkan satu atau lebih tabel yang memiliki hubungan. Klausa ini terdapat empat
 	jenis yaitu INNER JOIN, LEFT JOIN, RIGHT JOIN, DAN FULL JOIN. Secara sederhana dapat dipahami sebagai berikut
-	1. Ibungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Hanya baris yang memiliki
+	1. INER JOIN Menghubungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Hanya baris yang memiliki
 	   nilai yang sama di kedua tabel yang akan ditampilkan.
-	2. Menggabungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Semua baris dari tabel
+	2. RIGHT JOIN Menggabungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Semua baris dari tabel
 	   pertama dan baris yang cocok dari tabel lainnya akan ditampilkan. Jika tidak ada kecocokan, hasilnya adalah NULL
 	   pada sisi kanan.
 	3. Kelikan dari LEFT JOIN. Menggabungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka.
 	   Semua baris dari tabel kedua dan baris yang cocok dari tabel lainnya akan ditampilkan. Jika tidak ada kecocokan,
 	   hasilnya adalah NULL pada sisi kiri
-	4. enggabungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Jika tidak ada kecocokan,
+	4. FULL JOIN Menggabungkan baris dari dua atau lebih tabel berdasarkan kolom terkait antara mereka. Jika tidak ada kecocokan,
 	   hasilnya adalah NULL pada sisi yang tidak memiliki kecocokan
 */
 
